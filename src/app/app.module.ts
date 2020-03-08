@@ -10,29 +10,35 @@ import { HeaderComponent } from './shared/header/header.component';
 import { SidebarComponent } from './shared/sidebar/sidebar.component';
 import { BreadcrumsComponent } from './shared/breadcrums/breadcrums.component';
 import { NopagefoundComponent } from './shared/nopagefound/nopagefound.component';
+import { PagesComponent } from './pages/pages.component';
+import { RegisterComponent } from './login/register.component';
 
 //ROUTES
 import { AppRoutingModule } from './app-routing.module';
-import { PagesComponent } from './pages/pages.component';
-import { RegisterComponent } from './login/register.component';
+
+//MODULOS
+import { PagesModule } from './pages/pages.module';
+
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
-    NopagefoundComponent,
-    DashboardComponent,
+    RegisterComponent,
+   /*  DashboardComponent,
     ProgressComponent,
+    NopagefoundComponent,
     Graficas1Component,
     HeaderComponent,
     SidebarComponent,
     BreadcrumsComponent,
-    PagesComponent,
-    RegisterComponent
+    PagesComponent, */
+    
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    PagesModule
   ],
   providers: [],
   bootstrap: [AppComponent]
